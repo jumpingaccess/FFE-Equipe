@@ -5,7 +5,7 @@
 return [
     // Clé secrète JWT fournie par Equipe pour décoder les tokens
     // Cette clé est utilisée pour valider les tokens JWT envoyés par Equipe
-    'EQUIPE_SECRET' => 'HZvnE8gTJxF8hdJA',
+    'EQUIPE_SECRET' => 'your_Equipe_Secret_key_from extension_management',
     
     // Mode DEBUG - Active les logs détaillés (1 = On, 0 = Off)
     'DEBUG' => 1,
@@ -42,27 +42,5 @@ return [
     ]
 ];
 
-// Exemple de fichier .env.php rempli :
-/*
-return [
-    'EQUIPE_SECRET' => 'sk_live_abcd1234efgh5678ijkl9012mnop3456',
-    'DEBUG' => 0,
-    'VERSION' => '1.0.0',
-    'FFE_API_URL' => 'https://www.ffe.com/api/',
-    'FFE_API_KEY' => 'ffe_key_123456789',
-    'DEFAULT_COUNTRY' => 'FRA',
-    'DEFAULT_CURRENCY' => 'EUR',
-    'TIMEZONE' => 'Europe/Paris',
-    'TEMP_PATH' => '/tmp',
-    'MAX_UPLOAD_SIZE' => 50,
-    'EXPORT_ENCODING' => 'UTF-8',
-    'EXPORT_LINE_ENDING' => "\r\n",
-    'CUSTOM_FIELDS' => [
-        'engageur' => 'custom_engageur',
-        'coach' => 'custom_coach',
-        'categorie_age' => 'custom_categorie_age'
-    ]
-];
-*/
 ?>
     
