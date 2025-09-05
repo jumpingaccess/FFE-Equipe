@@ -1,0 +1,394 @@
+[2025-09-05 06:31:41] JWT decoded successfully:
+[2025-09-05 06:31:41] API Key: ext_ZAdCPn...
+[2025-09-05 06:31:41] Meeting URL: https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:31:41] === FFE Extension Interface Loading ===
+[2025-09-05 06:31:41] API Key found: YES - ext_ZAdCPn...
+[2025-09-05 06:31:41] Meeting URL found: YES - https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:31:41] =====================================
+[2025-09-05 06:31:41] === Test Connection Debug ===
+[2025-09-05 06:31:41] Raw API Key: ext_ZAdCPn...
+[2025-09-05 06:31:41] Raw Meeting URL: https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:31:41] POST data: Array
+(
+    [action] => test_connection
+    [api_key] => ext_ZAdCPnNXJ4iyY49j1gEDm64K
+    [meeting_url] => https://app-staging.equipe.com/meetings/1296
+)
+
+[2025-09-05 06:31:41] Final URL for test: https://app-staging.equipe.com/meetings/1296/competitions.json
+[2025-09-05 06:31:41] CURL verbose output: * Host app-staging.equipe.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 52.223.53.203, 15.197.253.240, 3.33.249.164, 99.83.185.157
+*   Trying 52.223.53.203:443...
+* Connected to app-staging.equipe.com (52.223.53.203) port 443
+* ALPN: curl offers h2,http/1.1
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=app-staging.equipe.com
+*  start date: Jul  7 23:49:11 2025 GMT
+*  expire date: Oct  5 23:49:10 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R10
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://app-staging.equipe.com/meetings/1296/competitions.json
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: app-staging.equipe.com]
+* [HTTP/2] [1] [:path: /meetings/1296/competitions.json]
+* [HTTP/2] [1] [x-api-key: ext_ZAdCPnNXJ4iyY49j1gEDm64K]
+* [HTTP/2] [1] [accept: application/json]
+* [HTTP/2] [1] [content-type: application/json]
+> GET /meetings/1296/competitions.json HTTP/2
+Host: app-staging.equipe.com
+X-Api-Key: ext_ZAdCPnNXJ4iyY49j1gEDm64K
+Accept: application/json
+Content-Type: application/json
+
+< HTTP/2 200 
+< cache-control: max-age=0, private, must-revalidate
+< content-type: application/json; charset=utf-8
+< etag: W/"63242b48bcd3580cc92a83456c300319"
+< nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+< referrer-policy: strict-origin-when-cross-origin
+< report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=oW35pUf6nswALYHIMQo6%2FmMEOR%2Bt9KDT2np14gbCK6o%3D\u0026sid=812dcc77-0bd0-43b1-a5f1-b25750382959\u0026ts=1757053901"}],"max_age":3600}
+< reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=oW35pUf6nswALYHIMQo6%2FmMEOR%2Bt9KDT2np14gbCK6o%3D&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&ts=1757053901"
+< server: Heroku
+< strict-transport-security: max-age=0; includeSubDomains
+< vary: Accept-Encoding
+< via: 2.0 heroku-router
+< x-content-type-options: nosniff
+< x-download-options: noopen
+< x-frame-options: SAMEORIGIN
+< x-permitted-cross-domain-policies: none
+< x-request-id: a9ec1f31-b925-82ee-0ca1-70cd4c86b67f
+< x-runtime: 0.023981
+< x-xss-protection: 1; mode=block
+< content-length: 70570
+< date: Fri, 05 Sep 2025 06:31:41 GMT
+< 
+* Connection #0 to host app-staging.equipe.com left intact
+
+[2025-09-05 06:31:41] HTTP Code: 200
+[2025-09-05 06:31:41] Response (first 200 chars): [{"kq":1,"ord":2,"klass":"Amateur 3 B Préparatoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","t
+[2025-09-05 06:31:41] === handleCheckImported ===
+[2025-09-05 06:31:41] Fetching competitions from: https://app-staging.equipe.com/meetings/1296/competitions.json
+[2025-09-05 06:31:41] HTTP Code: 200
+[2025-09-05 06:31:41] Response length: 70570
+[2025-09-05 06:31:41] Response preview: [{"kq":1,"ord":2,"klass":"Amateur 3 B Préparatoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","tavlingspl":"","e":true,"f":false,"g":false,"b1dom":"","domarec_kb":"","ckb":[],"domareh_kb":"","hkb":[],"domarem_kb":"","mkb":[],"domaree_kb":"","ekb":[],"domareb_kb":"","bkb":[],"plc":null,"dtid":null,"koe":null,"grundt":null,"omh1t":null,"omh2t":null,"bgrundt":null,"max1fel":null,"max2fel":null,"m
+[2025-09-05 06:31:41] Total competitions: 24
+[2025-09-05 06:31:41] FFE competitions: 24
+[2025-09-05 06:31:41] First FFE competition: {"kq":1,"ord":2,"klass":"Amateur 3 B Pr\u00e9paratoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","tavlingspl":"","e":true,"f":false,"g":false,"b1dom":"","domarec_kb":"","ckb":[],"domareh_kb":"","hkb":[],"domarem_kb":"","mkb":[],"domaree_kb":"","ekb":[],"domareb_kb":"","bkb":[],"plc":null,"dtid":null,"koe":null,"grundt":null,"omh1t":null,"omh2t":null,"bgrundt":null,"max1fel":null,"max2fel":null,"max3fel":null,"anm":35,"sta":null,"anb":null,"stb":null,"eanma":null,"eanmb":null,"prsum1":100,"prsum2":0,"prsum3":0,"prsum4":0,"premietxt1":"100","premietxt2":"","premietxt3":"","premietxt4":"","oeverskr1":"","oeverskr2":"","hed":false,"klock":"","lot":false,"klubbrab":false,"alias":true,"maxperlag":4,"minperlag":3,"anmlag":0,"premielag":"","kflag":1,"indlag":false,"hdatum":null,"udatum":null,"uthklock":null,"drekipage":null,"uthekipage":null,"stpergrupp":1,"moms":0,"settings":0,"acource":null,"bcource":null,"foreignid":"202501009_2","omg3t":null,"mrnk":false,"clabb":"2","allow_many":false,"admin_fee":null,"premie_curr":"","premie_tax":0,"cc_stop":4,"feiid":"","max4fel":null,"entry_fees":null,"percent_placed":25,"max5fel":null,"omg4t":null,"team_average_score":false,"open_for_entry":false,"max_horses_per_rider":null,"prize_money_distribution_chart":25,"validate_competitions_per_horse":true,"domarek_kb":"","kkb":[],"domaref_kb":"","fkb":[],"minimum_placed":null,"cross_country_cource":"","master_list_ids":[],"late_entries_last":false,"max_starts":null,"prize_money_vat":0,"respect_do_not_charge_vat":false,"only_rider_list_id":null,"except_rider_list_id":null,"only_completed_horses":false,"max_competitions_per_horse":null,"team_drop_worst_member":false,"fetch_settings":[],"prize_sum_team":0,"team_competition_groups":[],"place_word":"placerade","reduce_prize_money_when_fewer_than":null,"comment":"","published":null,"flags":null,"clublogos":null,"internet_desc":"","scoreonteam":false,"max6fel":null,"omg5t":null,"assessment_judges":[],"judge_by_aliases":[],"officials_data":[],"reduce_prize_money_when_fewer_than_percent":50,"judgement_settings":[],"allow_individual_marking_sheets":false,"source_id":null,"time_penalty_when_quicker_than":null,"team_sum_column":"gproc","allow_remarks":false,"judge_by_sections":[],"logo_ids":",","custom_show_jumping_settings":null,"available_in_point_of_sale":false,"judge_signatures":[],"publish_as_divider":false,"publish_photo_custom_field_source":"","point_of_sale_available_in_stores":[],"point_of_sale_delivered_directly_in_stores":[],"publish_without_marking_sheet":false,"publish_as_pinned":false,"allowed_start_categories":[],"publish_without_individual_results":false,"estimated_start_times_enabled":false,"parent_competition_id":null,"category_merge_groups":null,"unified_start_list":false,"surrounding_schedule_items":[],"publish_link_list":[],"publish_hide_class_no":false}
+[2025-09-05 06:31:41] Checking results for competition 1 at: https://app-staging.equipe.com/meetings/1296/competitions/1/results.json
+[2025-09-05 06:31:41] No valid results found for competition 1 - all results have re=999
+[2025-09-05 06:31:41] Checking results for competition 2 at: https://app-staging.equipe.com/meetings/1296/competitions/2/results.json
+[2025-09-05 06:31:41] No valid results found for competition 2 - all results have re=999
+[2025-09-05 06:31:41] Checking results for competition 3 at: https://app-staging.equipe.com/meetings/1296/competitions/3/results.json
+[2025-09-05 06:31:42] No valid results found for competition 3 - all results have re=999
+[2025-09-05 06:31:42] Checking results for competition 4 at: https://app-staging.equipe.com/meetings/1296/competitions/4/results.json
+[2025-09-05 06:31:42] No valid results found for competition 4 - all results have re=999
+[2025-09-05 06:31:42] Checking results for competition 5 at: https://app-staging.equipe.com/meetings/1296/competitions/5/results.json
+[2025-09-05 06:31:42] No valid results found for competition 5 - all results have re=999
+[2025-09-05 06:31:42] Checking results for competition 6 at: https://app-staging.equipe.com/meetings/1296/competitions/6/results.json
+[2025-09-05 06:31:42] No valid results found for competition 6 - all results have re=999
+[2025-09-05 06:31:42] Checking results for competition 7 at: https://app-staging.equipe.com/meetings/1296/competitions/7/results.json
+[2025-09-05 06:31:42] No valid results found for competition 7 - all results have re=999
+[2025-09-05 06:31:42] Checking results for competition 8 at: https://app-staging.equipe.com/meetings/1296/competitions/8/results.json
+[2025-09-05 06:31:42] No valid results found for competition 8 - all results have re=999
+[2025-09-05 06:31:42] Checking results for competition 9 at: https://app-staging.equipe.com/meetings/1296/competitions/9/results.json
+[2025-09-05 06:31:43] No valid results found for competition 9 - all results have re=999
+[2025-09-05 06:31:43] Checking results for competition 10 at: https://app-staging.equipe.com/meetings/1296/competitions/10/results.json
+[2025-09-05 06:31:43] No valid results found for competition 10 - all results have re=999
+[2025-09-05 06:31:43] Checking results for competition 11 at: https://app-staging.equipe.com/meetings/1296/competitions/11/results.json
+[2025-09-05 06:31:43] No valid results found for competition 11 - all results have re=999
+[2025-09-05 06:31:43] Checking results for competition 12 at: https://app-staging.equipe.com/meetings/1296/competitions/12/results.json
+[2025-09-05 06:31:43] No valid results found for competition 12 - all results have re=999
+[2025-09-05 06:31:43] Checking results for competition 13 at: https://app-staging.equipe.com/meetings/1296/competitions/13/results.json
+[2025-09-05 06:31:43] No valid results found for competition 13 - all results have re=999
+[2025-09-05 06:31:43] Checking results for competition 14 at: https://app-staging.equipe.com/meetings/1296/competitions/14/results.json
+[2025-09-05 06:31:43] No valid results found for competition 14 - all results have re=999
+[2025-09-05 06:31:43] Checking results for competition 15 at: https://app-staging.equipe.com/meetings/1296/competitions/15/results.json
+[2025-09-05 06:31:44] No valid results found for competition 15 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 16 at: https://app-staging.equipe.com/meetings/1296/competitions/16/results.json
+[2025-09-05 06:31:44] No valid results found for competition 16 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 17 at: https://app-staging.equipe.com/meetings/1296/competitions/17/results.json
+[2025-09-05 06:31:44] No valid results found for competition 17 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 18 at: https://app-staging.equipe.com/meetings/1296/competitions/18/results.json
+[2025-09-05 06:31:44] No valid results found for competition 18 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 19 at: https://app-staging.equipe.com/meetings/1296/competitions/19/results.json
+[2025-09-05 06:31:44] No valid results found for competition 19 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 20 at: https://app-staging.equipe.com/meetings/1296/competitions/20/results.json
+[2025-09-05 06:31:44] No valid results found for competition 20 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 21 at: https://app-staging.equipe.com/meetings/1296/competitions/21/results.json
+[2025-09-05 06:31:44] No valid results found for competition 21 - all results have re=999
+[2025-09-05 06:31:44] Checking results for competition 22 at: https://app-staging.equipe.com/meetings/1296/competitions/22/results.json
+[2025-09-05 06:31:45] No valid results found for competition 22 - all results have re=999
+[2025-09-05 06:31:45] Checking results for competition 23 at: https://app-staging.equipe.com/meetings/1296/competitions/23/results.json
+[2025-09-05 06:31:45] No valid results found for competition 23 - all results have re=999
+[2025-09-05 06:31:45] Checking results for competition 24 at: https://app-staging.equipe.com/meetings/1296/competitions/24/results.json
+[2025-09-05 06:31:45] No valid results found for competition 24 - all results have re=999
+[2025-09-05 06:32:04] Language changed to: en
+[2025-09-05 06:32:04] JWT decoded successfully:
+[2025-09-05 06:32:04] API Key: ext_ZAdCPn...
+[2025-09-05 06:32:04] Meeting URL: https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:32:04] === FFE Extension Interface Loading ===
+[2025-09-05 06:32:04] API Key found: YES - ext_ZAdCPn...
+[2025-09-05 06:32:04] Meeting URL found: YES - https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:32:04] =====================================
+[2025-09-05 06:32:04] === Test Connection Debug ===
+[2025-09-05 06:32:04] Raw API Key: ext_ZAdCPn...
+[2025-09-05 06:32:04] Raw Meeting URL: https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:32:04] POST data: Array
+(
+    [action] => test_connection
+    [api_key] => ext_ZAdCPnNXJ4iyY49j1gEDm64K
+    [meeting_url] => https://app-staging.equipe.com/meetings/1296
+)
+
+[2025-09-05 06:32:04] Final URL for test: https://app-staging.equipe.com/meetings/1296/competitions.json
+[2025-09-05 06:32:05] CURL verbose output: * Host app-staging.equipe.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 15.197.253.240, 3.33.249.164, 99.83.185.157, 52.223.53.203
+*   Trying 15.197.253.240:443...
+* Connected to app-staging.equipe.com (15.197.253.240) port 443
+* ALPN: curl offers h2,http/1.1
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=app-staging.equipe.com
+*  start date: Jul  7 23:49:11 2025 GMT
+*  expire date: Oct  5 23:49:10 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R10
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://app-staging.equipe.com/meetings/1296/competitions.json
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: app-staging.equipe.com]
+* [HTTP/2] [1] [:path: /meetings/1296/competitions.json]
+* [HTTP/2] [1] [x-api-key: ext_ZAdCPnNXJ4iyY49j1gEDm64K]
+* [HTTP/2] [1] [accept: application/json]
+* [HTTP/2] [1] [content-type: application/json]
+> GET /meetings/1296/competitions.json HTTP/2
+Host: app-staging.equipe.com
+X-Api-Key: ext_ZAdCPnNXJ4iyY49j1gEDm64K
+Accept: application/json
+Content-Type: application/json
+
+< HTTP/2 200 
+< cache-control: max-age=0, private, must-revalidate
+< content-type: application/json; charset=utf-8
+< etag: W/"63242b48bcd3580cc92a83456c300319"
+< nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+< referrer-policy: strict-origin-when-cross-origin
+< report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=yUAOSHUqOrxJ%2BfN7vmnzsDFRtCg1MrEkXiX41ZfimZU%3D\u0026sid=812dcc77-0bd0-43b1-a5f1-b25750382959\u0026ts=1757053925"}],"max_age":3600}
+< reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=yUAOSHUqOrxJ%2BfN7vmnzsDFRtCg1MrEkXiX41ZfimZU%3D&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&ts=1757053925"
+< server: Heroku
+< strict-transport-security: max-age=0; includeSubDomains
+< vary: Accept-Encoding
+< via: 2.0 heroku-router
+< x-content-type-options: nosniff
+< x-download-options: noopen
+< x-frame-options: SAMEORIGIN
+< x-permitted-cross-domain-policies: none
+< x-request-id: 9c1273b6-7ed5-77e4-2fcc-8a0d105e8955
+< x-runtime: 0.023466
+< x-xss-protection: 1; mode=block
+< content-length: 70570
+< date: Fri, 05 Sep 2025 06:32:05 GMT
+< 
+* Connection #0 to host app-staging.equipe.com left intact
+
+[2025-09-05 06:32:05] HTTP Code: 200
+[2025-09-05 06:32:05] Response (first 200 chars): [{"kq":1,"ord":2,"klass":"Amateur 3 B Préparatoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","t
+[2025-09-05 06:32:05] === handleCheckImported ===
+[2025-09-05 06:32:05] Fetching competitions from: https://app-staging.equipe.com/meetings/1296/competitions.json
+[2025-09-05 06:32:05] HTTP Code: 200
+[2025-09-05 06:32:05] Response length: 70570
+[2025-09-05 06:32:05] Response preview: [{"kq":1,"ord":2,"klass":"Amateur 3 B Préparatoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","tavlingspl":"","e":true,"f":false,"g":false,"b1dom":"","domarec_kb":"","ckb":[],"domareh_kb":"","hkb":[],"domarem_kb":"","mkb":[],"domaree_kb":"","ekb":[],"domareb_kb":"","bkb":[],"plc":null,"dtid":null,"koe":null,"grundt":null,"omh1t":null,"omh2t":null,"bgrundt":null,"max1fel":null,"max2fel":null,"m
+[2025-09-05 06:32:05] Total competitions: 24
+[2025-09-05 06:32:05] FFE competitions: 24
+[2025-09-05 06:32:05] First FFE competition: {"kq":1,"ord":2,"klass":"Amateur 3 B Pr\u00e9paratoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","tavlingspl":"","e":true,"f":false,"g":false,"b1dom":"","domarec_kb":"","ckb":[],"domareh_kb":"","hkb":[],"domarem_kb":"","mkb":[],"domaree_kb":"","ekb":[],"domareb_kb":"","bkb":[],"plc":null,"dtid":null,"koe":null,"grundt":null,"omh1t":null,"omh2t":null,"bgrundt":null,"max1fel":null,"max2fel":null,"max3fel":null,"anm":35,"sta":null,"anb":null,"stb":null,"eanma":null,"eanmb":null,"prsum1":100,"prsum2":0,"prsum3":0,"prsum4":0,"premietxt1":"100","premietxt2":"","premietxt3":"","premietxt4":"","oeverskr1":"","oeverskr2":"","hed":false,"klock":"","lot":false,"klubbrab":false,"alias":true,"maxperlag":4,"minperlag":3,"anmlag":0,"premielag":"","kflag":1,"indlag":false,"hdatum":null,"udatum":null,"uthklock":null,"drekipage":null,"uthekipage":null,"stpergrupp":1,"moms":0,"settings":0,"acource":null,"bcource":null,"foreignid":"202501009_2","omg3t":null,"mrnk":false,"clabb":"2","allow_many":false,"admin_fee":null,"premie_curr":"","premie_tax":0,"cc_stop":4,"feiid":"","max4fel":null,"entry_fees":null,"percent_placed":25,"max5fel":null,"omg4t":null,"team_average_score":false,"open_for_entry":false,"max_horses_per_rider":null,"prize_money_distribution_chart":25,"validate_competitions_per_horse":true,"domarek_kb":"","kkb":[],"domaref_kb":"","fkb":[],"minimum_placed":null,"cross_country_cource":"","master_list_ids":[],"late_entries_last":false,"max_starts":null,"prize_money_vat":0,"respect_do_not_charge_vat":false,"only_rider_list_id":null,"except_rider_list_id":null,"only_completed_horses":false,"max_competitions_per_horse":null,"team_drop_worst_member":false,"fetch_settings":[],"prize_sum_team":0,"team_competition_groups":[],"place_word":"placerade","reduce_prize_money_when_fewer_than":null,"comment":"","published":null,"flags":null,"clublogos":null,"internet_desc":"","scoreonteam":false,"max6fel":null,"omg5t":null,"assessment_judges":[],"judge_by_aliases":[],"officials_data":[],"reduce_prize_money_when_fewer_than_percent":50,"judgement_settings":[],"allow_individual_marking_sheets":false,"source_id":null,"time_penalty_when_quicker_than":null,"team_sum_column":"gproc","allow_remarks":false,"judge_by_sections":[],"logo_ids":",","custom_show_jumping_settings":null,"available_in_point_of_sale":false,"judge_signatures":[],"publish_as_divider":false,"publish_photo_custom_field_source":"","point_of_sale_available_in_stores":[],"point_of_sale_delivered_directly_in_stores":[],"publish_without_marking_sheet":false,"publish_as_pinned":false,"allowed_start_categories":[],"publish_without_individual_results":false,"estimated_start_times_enabled":false,"parent_competition_id":null,"category_merge_groups":null,"unified_start_list":false,"surrounding_schedule_items":[],"publish_link_list":[],"publish_hide_class_no":false}
+[2025-09-05 06:32:05] Checking results for competition 1 at: https://app-staging.equipe.com/meetings/1296/competitions/1/results.json
+[2025-09-05 06:32:05] No valid results found for competition 1 - all results have re=999
+[2025-09-05 06:32:05] Checking results for competition 2 at: https://app-staging.equipe.com/meetings/1296/competitions/2/results.json
+[2025-09-05 06:32:05] No valid results found for competition 2 - all results have re=999
+[2025-09-05 06:32:05] Checking results for competition 3 at: https://app-staging.equipe.com/meetings/1296/competitions/3/results.json
+[2025-09-05 06:32:05] No valid results found for competition 3 - all results have re=999
+[2025-09-05 06:32:05] Checking results for competition 4 at: https://app-staging.equipe.com/meetings/1296/competitions/4/results.json
+[2025-09-05 06:32:06] No valid results found for competition 4 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 5 at: https://app-staging.equipe.com/meetings/1296/competitions/5/results.json
+[2025-09-05 06:32:06] No valid results found for competition 5 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 6 at: https://app-staging.equipe.com/meetings/1296/competitions/6/results.json
+[2025-09-05 06:32:06] No valid results found for competition 6 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 7 at: https://app-staging.equipe.com/meetings/1296/competitions/7/results.json
+[2025-09-05 06:32:06] No valid results found for competition 7 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 8 at: https://app-staging.equipe.com/meetings/1296/competitions/8/results.json
+[2025-09-05 06:32:06] No valid results found for competition 8 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 9 at: https://app-staging.equipe.com/meetings/1296/competitions/9/results.json
+[2025-09-05 06:32:06] No valid results found for competition 9 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 10 at: https://app-staging.equipe.com/meetings/1296/competitions/10/results.json
+[2025-09-05 06:32:06] No valid results found for competition 10 - all results have re=999
+[2025-09-05 06:32:06] Checking results for competition 11 at: https://app-staging.equipe.com/meetings/1296/competitions/11/results.json
+[2025-09-05 06:32:07] No valid results found for competition 11 - all results have re=999
+[2025-09-05 06:32:07] Checking results for competition 12 at: https://app-staging.equipe.com/meetings/1296/competitions/12/results.json
+[2025-09-05 06:32:07] No valid results found for competition 12 - all results have re=999
+[2025-09-05 06:32:07] Checking results for competition 13 at: https://app-staging.equipe.com/meetings/1296/competitions/13/results.json
+[2025-09-05 06:32:07] No valid results found for competition 13 - all results have re=999
+[2025-09-05 06:32:07] Checking results for competition 14 at: https://app-staging.equipe.com/meetings/1296/competitions/14/results.json
+[2025-09-05 06:32:07] No valid results found for competition 14 - all results have re=999
+[2025-09-05 06:32:07] Checking results for competition 15 at: https://app-staging.equipe.com/meetings/1296/competitions/15/results.json
+[2025-09-05 06:32:07] No valid results found for competition 15 - all results have re=999
+[2025-09-05 06:32:07] Checking results for competition 16 at: https://app-staging.equipe.com/meetings/1296/competitions/16/results.json
+[2025-09-05 06:32:07] No valid results found for competition 16 - all results have re=999
+[2025-09-05 06:32:07] Checking results for competition 17 at: https://app-staging.equipe.com/meetings/1296/competitions/17/results.json
+[2025-09-05 06:32:08] No valid results found for competition 17 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 18 at: https://app-staging.equipe.com/meetings/1296/competitions/18/results.json
+[2025-09-05 06:32:08] No valid results found for competition 18 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 19 at: https://app-staging.equipe.com/meetings/1296/competitions/19/results.json
+[2025-09-05 06:32:08] No valid results found for competition 19 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 20 at: https://app-staging.equipe.com/meetings/1296/competitions/20/results.json
+[2025-09-05 06:32:08] No valid results found for competition 20 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 21 at: https://app-staging.equipe.com/meetings/1296/competitions/21/results.json
+[2025-09-05 06:32:08] No valid results found for competition 21 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 22 at: https://app-staging.equipe.com/meetings/1296/competitions/22/results.json
+[2025-09-05 06:32:08] No valid results found for competition 22 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 23 at: https://app-staging.equipe.com/meetings/1296/competitions/23/results.json
+[2025-09-05 06:32:08] No valid results found for competition 23 - all results have re=999
+[2025-09-05 06:32:08] Checking results for competition 24 at: https://app-staging.equipe.com/meetings/1296/competitions/24/results.json
+[2025-09-05 06:32:09] No valid results found for competition 24 - all results have re=999
+[2025-09-05 06:33:33] JWT decoded successfully:
+[2025-09-05 06:33:33] API Key: ext_ZAdCPn...
+[2025-09-05 06:33:33] Meeting URL: https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:33:33] === FFE Extension Interface Loading ===
+[2025-09-05 06:33:33] API Key found: YES - ext_ZAdCPn...
+[2025-09-05 06:33:33] Meeting URL found: YES - https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:33:33] =====================================
+[2025-09-05 06:33:33] === Test Connection Debug ===
+[2025-09-05 06:33:33] Raw API Key: ext_ZAdCPn...
+[2025-09-05 06:33:33] Raw Meeting URL: https://app-staging.equipe.com/meetings/1296
+[2025-09-05 06:33:33] POST data: Array
+(
+    [action] => test_connection
+    [api_key] => ext_ZAdCPnNXJ4iyY49j1gEDm64K
+    [meeting_url] => https://app-staging.equipe.com/meetings/1296
+)
+
+[2025-09-05 06:33:33] Final URL for test: https://app-staging.equipe.com/meetings/1296/competitions.json
+[2025-09-05 06:33:33] CURL verbose output: * Host app-staging.equipe.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 52.223.53.203, 3.33.249.164, 99.83.185.157, 15.197.253.240
+*   Trying 52.223.53.203:443...
+* Connected to app-staging.equipe.com (52.223.53.203) port 443
+* ALPN: curl offers h2,http/1.1
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=app-staging.equipe.com
+*  start date: Jul  7 23:49:11 2025 GMT
+*  expire date: Oct  5 23:49:10 2025 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R10
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://app-staging.equipe.com/meetings/1296/competitions.json
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: app-staging.equipe.com]
+* [HTTP/2] [1] [:path: /meetings/1296/competitions.json]
+* [HTTP/2] [1] [x-api-key: ext_ZAdCPnNXJ4iyY49j1gEDm64K]
+* [HTTP/2] [1] [accept: application/json]
+* [HTTP/2] [1] [content-type: application/json]
+> GET /meetings/1296/competitions.json HTTP/2
+Host: app-staging.equipe.com
+X-Api-Key: ext_ZAdCPnNXJ4iyY49j1gEDm64K
+Accept: application/json
+Content-Type: application/json
+
+< HTTP/2 200 
+< cache-control: max-age=0, private, must-revalidate
+< content-type: application/json; charset=utf-8
+< etag: W/"63242b48bcd3580cc92a83456c300319"
+< nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+< referrer-policy: strict-origin-when-cross-origin
+< report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Bgr1scWko8lu3MZ%2BSLsOMvaDkz69KnOhEIoV9ZCokzw%3D\u0026sid=812dcc77-0bd0-43b1-a5f1-b25750382959\u0026ts=1757054013"}],"max_age":3600}
+< reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=Bgr1scWko8lu3MZ%2BSLsOMvaDkz69KnOhEIoV9ZCokzw%3D&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&ts=1757054013"
+< server: Heroku
+< strict-transport-security: max-age=0; includeSubDomains
+< vary: Accept-Encoding
+< via: 2.0 heroku-router
+< x-content-type-options: nosniff
+< x-download-options: noopen
+< x-frame-options: SAMEORIGIN
+< x-permitted-cross-domain-policies: none
+< x-request-id: 514741e6-4c07-6ddc-ab15-49ddad973e59
+< x-runtime: 0.024587
+< x-xss-protection: 1; mode=block
+< content-length: 70570
+< date: Fri, 05 Sep 2025 06:33:33 GMT
+< 
+* Connection #0 to host app-staging.equipe.com left intact
+
+[2025-09-05 06:33:33] HTTP Code: 200
+[2025-09-05 06:33:33] Response (first 200 chars): [{"kq":1,"ord":2,"klass":"Amateur 3 B Préparatoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","t
+[2025-09-05 06:33:33] === handleCheckImported ===
+[2025-09-05 06:33:33] Fetching competitions from: https://app-staging.equipe.com/meetings/1296/competitions.json
+[2025-09-05 06:33:33] HTTP Code: 200
+[2025-09-05 06:33:33] Response length: 70570
+[2025-09-05 06:33:33] Response preview: [{"kq":1,"ord":2,"klass":"Amateur 3 B Préparatoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","tavlingspl":"","e":true,"f":false,"g":false,"b1dom":"","domarec_kb":"","ckb":[],"domareh_kb":"","hkb":[],"domarem_kb":"","mkb":[],"domaree_kb":"","ekb":[],"domareb_kb":"","bkb":[],"plc":null,"dtid":null,"koe":null,"grundt":null,"omh1t":null,"omh2t":null,"bgrundt":null,"max1fel":null,"max2fel":null,"m
+[2025-09-05 06:33:33] Total competitions: 24
+[2025-09-05 06:33:33] FFE competitions: 24
+[2025-09-05 06:33:33] First FFE competition: {"kq":1,"ord":2,"klass":"Amateur 3 B Pr\u00e9paratoire","sponsor":"","b":true,"_id":"11227","h_id":null,"z":"D","h":"R","w":3,"r":"R","datum":"2025-06-14","q":false,"x":"R","lag":false,"lagtavling":"","tavlingspl":"","e":true,"f":false,"g":false,"b1dom":"","domarec_kb":"","ckb":[],"domareh_kb":"","hkb":[],"domarem_kb":"","mkb":[],"domaree_kb":"","ekb":[],"domareb_kb":"","bkb":[],"plc":null,"dtid":null,"koe":null,"grundt":null,"omh1t":null,"omh2t":null,"bgrundt":null,"max1fel":null,"max2fel":null,"max3fel":null,"anm":35,"sta":null,"anb":null,"stb":null,"eanma":null,"eanmb":null,"prsum1":100,"prsum2":0,"prsum3":0,"prsum4":0,"premietxt1":"100","premietxt2":"","premietxt3":"","premietxt4":"","oeverskr1":"","oeverskr2":"","hed":false,"klock":"","lot":false,"klubbrab":false,"alias":true,"maxperlag":4,"minperlag":3,"anmlag":0,"premielag":"","kflag":1,"indlag":false,"hdatum":null,"udatum":null,"uthklock":null,"drekipage":null,"uthekipage":null,"stpergrupp":1,"moms":0,"settings":0,"acource":null,"bcource":null,"foreignid":"202501009_2","omg3t":null,"mrnk":false,"clabb":"2","allow_many":false,"admin_fee":null,"premie_curr":"","premie_tax":0,"cc_stop":4,"feiid":"","max4fel":null,"entry_fees":null,"percent_placed":25,"max5fel":null,"omg4t":null,"team_average_score":false,"open_for_entry":false,"max_horses_per_rider":null,"prize_money_distribution_chart":25,"validate_competitions_per_horse":true,"domarek_kb":"","kkb":[],"domaref_kb":"","fkb":[],"minimum_placed":null,"cross_country_cource":"","master_list_ids":[],"late_entries_last":false,"max_starts":null,"prize_money_vat":0,"respect_do_not_charge_vat":false,"only_rider_list_id":null,"except_rider_list_id":null,"only_completed_horses":false,"max_competitions_per_horse":null,"team_drop_worst_member":false,"fetch_settings":[],"prize_sum_team":0,"team_competition_groups":[],"place_word":"placerade","reduce_prize_money_when_fewer_than":null,"comment":"","published":null,"flags":null,"clublogos":null,"internet_desc":"","scoreonteam":false,"max6fel":null,"omg5t":null,"assessment_judges":[],"judge_by_aliases":[],"officials_data":[],"reduce_prize_money_when_fewer_than_percent":50,"judgement_settings":[],"allow_individual_marking_sheets":false,"source_id":null,"time_penalty_when_quicker_than":null,"team_sum_column":"gproc","allow_remarks":false,"judge_by_sections":[],"logo_ids":",","custom_show_jumping_settings":null,"available_in_point_of_sale":false,"judge_signatures":[],"publish_as_divider":false,"publish_photo_custom_field_source":"","point_of_sale_available_in_stores":[],"point_of_sale_delivered_directly_in_stores":[],"publish_without_marking_sheet":false,"publish_as_pinned":false,"allowed_start_categories":[],"publish_without_individual_results":false,"estimated_start_times_enabled":false,"parent_competition_id":null,"category_merge_groups":null,"unified_start_list":false,"surrounding_schedule_items":[],"publish_link_list":[],"publish_hide_class_no":false}
+[2025-09-05 06:33:33] Checking results for competition 1 at: https://app-staging.equipe.com/meetings/1296/competitions/1/results.json
+[2025-09-05 06:33:33] No valid results found for competition 1 - all results have re=999
+[2025-09-05 06:33:33] Checking results for competition 2 at: https://app-staging.equipe.com/meetings/1296/competitions/2/results.json
+[2025-09-05 06:33:34] No valid results found for competition 2 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 3 at: https://app-staging.equipe.com/meetings/1296/competitions/3/results.json
+[2025-09-05 06:33:34] No valid results found for competition 3 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 4 at: https://app-staging.equipe.com/meetings/1296/competitions/4/results.json
+[2025-09-05 06:33:34] No valid results found for competition 4 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 5 at: https://app-staging.equipe.com/meetings/1296/competitions/5/results.json
+[2025-09-05 06:33:34] No valid results found for competition 5 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 6 at: https://app-staging.equipe.com/meetings/1296/competitions/6/results.json
+[2025-09-05 06:33:34] No valid results found for competition 6 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 7 at: https://app-staging.equipe.com/meetings/1296/competitions/7/results.json
+[2025-09-05 06:33:34] No valid results found for competition 7 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 8 at: https://app-staging.equipe.com/meetings/1296/competitions/8/results.json
+[2025-09-05 06:33:34] No valid results found for competition 8 - all results have re=999
+[2025-09-05 06:33:34] Checking results for competition 9 at: https://app-staging.equipe.com/meetings/1296/competitions/9/results.json
+[2025-09-05 06:33:35] No valid results found for competition 9 - all results have re=999
+[2025-09-05 06:33:35] Checking results for competition 10 at: https://app-staging.equipe.com/meetings/1296/competitions/10/results.json
+[2025-09-05 06:33:35] No valid results found for competition 10 - all results have re=999
+[2025-09-05 06:33:35] Checking results for competition 11 at: https://app-staging.equipe.com/meetings/1296/competitions/11/results.json
+[2025-09-05 06:33:35] No valid results found for competition 11 - all results have re=999
+[2025-09-05 06:33:35] Checking results for competition 12 at: https://app-staging.equipe.com/meetings/1296/competitions/12/results.json
+[2025-09-05 06:33:35] No valid results found for competition 12 - all results have re=999
+[2025-09-05 06:33:35] Checking results for competition 13 at: https://app-staging.equipe.com/meetings/1296/competitions/13/results.json
+[2025-09-05 06:33:35] No valid results found for competition 13 - all results have re=999
+[2025-09-05 06:33:35] Checking results for competition 14 at: https://app-staging.equipe.com/meetings/1296/competitions/14/results.json
+[2025-09-05 06:33:35] No valid results found for competition 14 - all results have re=999
+[2025-09-05 06:33:35] Checking results for competition 15 at: https://app-staging.equipe.com/meetings/1296/competitions/15/results.json
+[2025-09-05 06:33:36] No valid results found for competition 15 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 16 at: https://app-staging.equipe.com/meetings/1296/competitions/16/results.json
+[2025-09-05 06:33:36] No valid results found for competition 16 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 17 at: https://app-staging.equipe.com/meetings/1296/competitions/17/results.json
+[2025-09-05 06:33:36] No valid results found for competition 17 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 18 at: https://app-staging.equipe.com/meetings/1296/competitions/18/results.json
+[2025-09-05 06:33:36] No valid results found for competition 18 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 19 at: https://app-staging.equipe.com/meetings/1296/competitions/19/results.json
+[2025-09-05 06:33:36] No valid results found for competition 19 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 20 at: https://app-staging.equipe.com/meetings/1296/competitions/20/results.json
+[2025-09-05 06:33:36] No valid results found for competition 20 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 21 at: https://app-staging.equipe.com/meetings/1296/competitions/21/results.json
+[2025-09-05 06:33:36] No valid results found for competition 21 - all results have re=999
+[2025-09-05 06:33:36] Checking results for competition 22 at: https://app-staging.equipe.com/meetings/1296/competitions/22/results.json
+[2025-09-05 06:33:37] No valid results found for competition 22 - all results have re=999
+[2025-09-05 06:33:37] Checking results for competition 23 at: https://app-staging.equipe.com/meetings/1296/competitions/23/results.json
+[2025-09-05 06:33:37] No valid results found for competition 23 - all results have re=999
+[2025-09-05 06:33:37] Checking results for competition 24 at: https://app-staging.equipe.com/meetings/1296/competitions/24/results.json
+[2025-09-05 06:33:37] No valid results found for competition 24 - all results have re=999
