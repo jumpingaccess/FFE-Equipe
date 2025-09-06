@@ -40,6 +40,7 @@ This extension exposes a single entry point, `index.php`, that can:
 - Parse an **FFE XML** file (official FFE export) and stage its data for import into **Equipe**.
 - Push the parsed data to **Equipe** using its REST endpoints (via `EquipeApiSender`).
 - Export **results** from Equipe into **FFECompet (V24)** (and **SIF** text formats on todo).
+Export work only on classes created with XML file so far
 - Provide a **language‑switchable UI** (French/English) suitable for embedding in an iframe.
 
 The extension communicates with Equipe using an **API key** and **meeting URL**, provided either via **JWT** (GET `?token=...`) or plain **POST** JSON payloads.
